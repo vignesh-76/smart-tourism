@@ -1,0 +1,174 @@
+/* --- Global Styles --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5; /* light gray background */
+  color: #222; /* dark text */
+}
+
+/* --- Header --- */
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* --- Agent Container --- */
+.agent-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Agent Card --- */
+.agent-card {
+  background: #111; /* black background */
+  color: #fff; /* white text */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.agent-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+/* --- Agent Header --- */
+.agent-card .agent-header {
+  background-color: #333; /* dark gray header */
+  padding: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+/* --- Tourist Agent Sub-Card --- */
+.tourist-card {
+  background: #fff; /* white card */
+  color: #111;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tourist-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.tourist-card h5 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.tourist-card p {
+  margin-bottom: 10px;
+}
+
+/* --- Book Button --- */
+.book-btn {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.book-btn:hover {
+  background: #fff;
+  color: #111;
+  border: 2px solid #111;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  .agent-container {
+    padding: 20px;
+    gap: 20px;
+  }
+}
+
+
+/* Override all Bootstrap buttons */
+.btn {
+  background-color: #111 !important; /* black background */
+  color: #fff !important;            /* white text */
+  border: 2px solid #fff !important; /* white border */
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 rgba(0,0,0,0); /* initial shadow */
+}
+
+/* Hover Effect for all buttons */
+.btn:hover {
+  background-color: #0d6efd !important; /* glowing blue on hover */
+  color: #fff !important;
+  box-shadow: 0 0 8px #0d6efd, 0 0 20px #0d6efd, 0 0 30px #0d6efd; /* glow */
+  transform: translateY(-2px); /* slight lift */
+}
+   /* --- Navbar Background --- */
+.navbar {
+  background-color: #f8f9fa !important; /* light gray/white background */
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Navbar Brand / Links */
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #111 !important; /* black text */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #0d6efd !important; /* hover color */
+}
+
+/* Navbar Buttons */
+.navbar .btn {
+  background-color: #111 !important; /* black button */
+  color: #fff !important;            /* white text */
+  border: 2px solid #111 !important; /* black border */
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.navbar .btn:hover {
+  background-color: #0d6efd !important; /* glowing blue */
+  color: #fff !important;
+  box-shadow: 0 0 8px #0d6efd, 0 0 20px #0d6efd, 0 0 30px #0d6efd;
+  transform: translateY(-2px); /* lift effect */
+}

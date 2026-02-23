@@ -1,0 +1,13 @@
+.va-container { max-width:900px; margin:20px auto; border:1px solid #ddd; border-radius:12px; padding:16px; font-family:Inter, system-ui, sans-serif; }
+.va-header { display:flex; justify-content:space-between; align-items:center; }
+.va-main { display:flex; gap:16px; margin-top:12px; }
+.va-panel { flex:1; padding:12px; border-right:1px solid #eee; }
+.va-side { width:240px; padding:12px; }
+.va-mic { padding:10px 14px; border-radius:8px; cursor:pointer; }
+.va-mic.listening { background:#c0392b; color:white; }
+.va-transcript { margin-top:10px; min-height:48px; background:#f5f5f5; padding:8px; border-radius:8px; }
+.va-form { display:flex; gap:8px; margin-top:10px; }
+.va-form input { flex:1; padding:8px; }
+.va-controls { display:flex; gap:12px; margin-top:10px; align-items:center; }
+.va-side button { display:block; width:100%; margin-bottom:8px; }
+.va-footer { margin-top:12px; font-size:12px; color:#666; }

@@ -1,0 +1,66 @@
+.navbar1{
+    padding-left: 80%;
+    display: flex;
+    
+}
+.homeimg {
+  background-image: url("./img.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  max-height: fit-content;
+  display: flex;  
+  flex-direction: column;           /* Enable flexbox */
+  align-items: flex-start;   /* Align text to top */
+  justify-content: flex-start; /* Align text to left */
+  padding: 20px; 
+
+  
+           /* Small padding instead of 10% */
+}
+
+.homeimg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+.homeimg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.homeimg h5 {
+  color: white;
+  font-size: 155px;
+  margin: 0;
+  
+}
+
+.homeimg div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgbut {
+  margin-top: 30px; 
+display: flex;
+justify-content: center;
+align-items: center; 
+padding-left: 20%; 
+padding-bottom: 20%;
+
+}
+
+
